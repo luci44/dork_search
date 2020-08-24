@@ -15,14 +15,6 @@ class BlockAll(cookiejar.CookiePolicy):
 def clear(): 
     return os.system('cls' if os.name == 'nt' else 'clear')
         
-    
-print ("")
-
-A = """
-Google_Sub_Dork
-"""
-print ("")
-print(A)
 TLD = ["com","com.tw","co.in","be","de","co.uk","co.ma","dz","ru","ca"]
 s = requests.Session()
 s.cookies.set_policy(BlockAll())
